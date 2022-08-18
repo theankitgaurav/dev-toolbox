@@ -13,7 +13,7 @@
 # Dev Toolbox ⚙️
 Handy menu bar app to serve as swiss-army knife for devs
 
-Plugin script to be used with the xbar/swiftbar framework.
+Plugin script to be used with the xbar/swiftbar framework. Using it is as simple as copying text and clicking on the action to be performed from the menu. By default, the result is saved back to clipboard.
 
 ## Screenshots
 
