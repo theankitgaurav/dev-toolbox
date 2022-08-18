@@ -66,7 +66,7 @@ function generateUuid() {
 
 [ $# -ge 1 ] && { $1 && exit $?; }
 
-createHeader "$APP_ICON" 'Dev Toolbox'
+createHeader "$APP_ICON" 'Dev Toolbox v1.0'
 
 createMenu "JSON"
 createAction "Format" prettifyJson
