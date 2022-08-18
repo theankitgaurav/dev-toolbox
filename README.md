@@ -18,9 +18,10 @@ Plugin script to be used with the xbar/swiftbar framework.
 2. Base64
   - Encode
   - Decode
-3. Date
+3. Datetime
   - Unix to Local timestamp
   - Unix to UTC timestamp
+  - Current Unix timestamp
 4. URL
   - Url-encode a string
   - Decode a url-encoded string
