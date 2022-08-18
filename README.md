@@ -49,8 +49,8 @@ Plugin script to be used with the xbar/swiftbar framework. Using it is as simple
 
 ## Installation
 
-1. Clone/download this repo and run `make`.
-2. Install xbar app by running: `brew install --cask xbar`.
+1. Install xbar by running: `brew install --cask xbar`.
+2. Clone/download this repo and run `make`.
 3. Open the xbar app.
 4. That's all. 🎉
 
