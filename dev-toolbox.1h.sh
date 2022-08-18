@@ -27,7 +27,7 @@ function createMenu() {
   echo "$1 | refresh=true "
 }
 function createAction() {
-  echo "-- $1 | refresh=true terminal=false bash='$SCRIPT_PATH' param1=$2 param2='|' param3='pbcopy'"
+  echo "-- $1 | refresh=true terminal=true bash='$SCRIPT_PATH' param1=$2 param2=| param3=pbcopy param4=&& param5=exit param6=0"
   echo "-- $1 | refresh=true terminal=true alternate=true bash='$SCRIPT_PATH' param1=$2"
 }
 
