@@ -16,7 +16,7 @@ export PATH="/usr/local/bin:/usr/bin:$PATH"
 function realpath() {
     [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
 }
-SCRIPT_PATH="$(realpath $0)"
+SCRIPT_PATH="$(realpath "$0")"
 
 function createHeader() {
   echo "$1"
