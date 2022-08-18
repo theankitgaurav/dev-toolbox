@@ -78,9 +78,9 @@ createMenu "Base64"
 createAction "Encode" encodeBase64
 createAction "Decode" decodeBase64
 
-createMenu "Date"
-createAction "Unix timestamp -> Local timestamp" unixToLocalTimestamp
-createAction "Unix timestamp -> UTC timestamp" unixToUtcTimestamp
+createMenu "Datetime"
+createAction "Unix → Local timestamp" unixToLocalTimestamp
+createAction "Unix → UTC timestamp" unixToUtcTimestamp
 createAction "Current Unix timestamp" currentUnixTimestamp
 
 createMenu "URL"
