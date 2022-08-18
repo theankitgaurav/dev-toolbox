@@ -33,11 +33,8 @@ Plugin script to be used with the xbar/swiftbar framework.
 - Customize the icon of the app from "Preferences" or by clicking on the app and pressing `CMD` + `E`.
 
 ## Installation
-1. Install xbar app by running: `brew install --cask xbar`
-2. Open the xbar app and click on its icon in the menu bar.
-3. Click “Open plugin folder”.
-4. Drop the plugin script(dev-toolbox.1h.sh) into the xbar plugins folder.
-5. Make the script executable by running: chmod +x dev-toolbox.1h.sh
-6. Refresh the xbar app by clicking on it and pressing `Shift` + `CMD` + `R`.
-7. That's all. 
+1. Clone/download this repo and run `make`.
+2. Install xbar app by running: `brew install --cask xbar`.
+3. Open the xbar app.
+4. That's all. 🎉
 
