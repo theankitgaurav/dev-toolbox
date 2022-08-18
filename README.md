@@ -44,7 +44,7 @@ Plugin script to be used with the xbar/swiftbar framework. Using it is as simple
 
 ## Bonus features
 
-- Hold `Alt` and click on any menu item to run display the output in terminal.
+- Hold `Alt` and click on any menu item to display the output in terminal.
 - Customize the icon of the app from "Preferences" or by clicking on the app and pressing `CMD` + `E`.
 
 ## Installation
