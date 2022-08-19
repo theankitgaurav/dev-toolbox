@@ -60,5 +60,5 @@ If using Xbar, clicking on an action will start a terminal instance followed by 
 Running commands in background (`terminal=false`) is not supported by xbar if the plugin path has spaces in it. As such there is currently no way to run the commands without opening a terminal at all in xbar.
 
 However, there is a workaround for this is Swiftbar, which allows to customize plugin path. As such it is suggested to use a path without spaces in it in swiftbar.
-Then while running the plugin, execute `make PLUGIN_PATH=<PATH TO PLUGIN FOLDER>;REFRESH_URL=swiftbar://refreshallplugins`.
+Then while running the plugin, execute `PLUGIN_PATH=<PATH TO PLUGIN FOLDER> REFRESH_URL=swiftbar://refreshallplugins make`.
 This will run the commands in background as expected. 🎉
