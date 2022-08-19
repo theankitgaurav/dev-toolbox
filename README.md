@@ -1,12 +1,13 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**
 
 - [Dev Toolbox](#dev-toolbox)
   - [Screenshots](#screenshots)
   - [Supported features](#supported-features)
   - [Bonus features](#bonus-features)
   - [Installation](#installation)
+  - [Notes](#notes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -54,3 +55,10 @@ Plugin script to be used with the xbar/swiftbar framework. Using it is as simple
 3. Open the xbar app.
 4. That's all. 🎉
 
+## Notes
+If using Xbar, clicking on an action will start a terminal instance followed by copy the output in clipboard and then exit.
+Running commands in background (`terminal=false`) is not supported by xbar if the plugin path has spaces in it. As such there is currently no way to run the commands without opening a terminal at all in xbar.
+
+However, there is a workaround for this is Swiftbar, which allows to customize plugin path. As such it is suggested to use a path without spaces in it in swiftbar.
+Then while running the plugin, execute `make PLUGIN_PATH=<PATH TO PLUGIN FOLDER>;REFRESH_URL=swiftbar://refreshallplugins`.
+This will run the commands in background as expected. 🎉

@@ -27,7 +27,12 @@ function createMenu() {
   echo "$1 | refresh=true "
 }
 function createAction() {
-  echo "-- $1 | refresh=true terminal=true bash='$SCRIPT_PATH' param1=$2 param2=| param3=pbcopy param4=&& param5=exit param6=0"
+  if [ -n "$SWIFTBAR" ];
+  then
+    echo "-- $1 | refresh=true terminal=false bash='$SCRIPT_PATH' param1=$2 param2=| param3=pbcopy"
+  else
+    echo "-- $1 | refresh=true terminal=true bash='$SCRIPT_PATH' param1=$2 param2=| param3=pbcopy param4=&& param5=exit param6=0"
+  fi
   echo "-- $1 | refresh=true terminal=true alternate=true bash='$SCRIPT_PATH' param1=$2"
 }
 
@@ -69,6 +74,8 @@ function generateUuid() {
 }
 
 [ $# -ge 1 ] && { $1 && exit $?; }
+
+if [ -n "$SWIFTBAR" ]; then APP_ICON="⚙️"; fi
 
 createHeader "$APP_ICON" 'Dev Toolbox v1.0'
 
